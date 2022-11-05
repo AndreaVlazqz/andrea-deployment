@@ -24,8 +24,7 @@
     "test": "react-scripts test --coverage --watchAll=false",
     "lint": "eslint --cache . --ext ts,tsx",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
-    "netlify": "netlify"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
