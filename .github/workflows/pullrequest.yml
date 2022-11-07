@@ -1,0 +1,14 @@
+name: Create PR
+
+on: [push]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create PR
+        uses: AndreaVlazqz/andrea-deployment@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GHTOKEN }}
